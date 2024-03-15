@@ -29,8 +29,8 @@ if img_file_buffer is not None:
         
     img_rgb = cv2.cvtColor(cv2_img, cv2.COLOR_BGR2RGB)
     try:
-    os.mkdir("temp")
-except:
+       os.mkdir("temp")
+    except:
     pass
 
 st.subheader("Texto a audio.")
