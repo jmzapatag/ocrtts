@@ -33,8 +33,8 @@ if img_file_buffer is not None:
     except:
     pass
 
-st.subheader("Texto a audio.")
-st.write('Las interfaces de texto a audio son fundamentales en las interfaces multimodales ya que permiten '  
+    st.subheader("Texto a audio.")
+    st.write('Las interfaces de texto a audio son fundamentales en las interfaces multimodales ya que permiten '  
          'una comunicación más accesible y natural, facilitando la inclusión de personas con discapacidades ' 
          ' visuales y permitiendo la interacción en situaciones donde no es posible leer texto. Estas interfaces '  
          ' también impulsan tecnologías emergentes como los asistentes de voz inteligentes, haciendo que la tecnología ' 
