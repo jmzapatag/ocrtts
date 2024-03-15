@@ -31,7 +31,7 @@ if img_file_buffer is not None:
     try:
        os.mkdir("temp")
     except:
-    pass
+      pass
 
     st.subheader("Texto a audio.")
     st.write('Las interfaces de texto a audio son fundamentales en las interfaces multimodales ya que permiten '  
