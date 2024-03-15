@@ -10,7 +10,6 @@ from gtts import gTTS
 
 
 st.title("Reconocimiento óptico de Caracteres")
-
 img_file_buffer = st.camera_input("Toma una Foto")
 
 with st.sidebar:
@@ -29,9 +28,7 @@ if img_file_buffer is not None:
     
         
     img_rgb = cv2.cvtColor(cv2_img, cv2.COLOR_BGR2RGB)
-    text=pytesseract.image_to_string(img_rgb)
-    st.write(text) 
-try:
+    try:
     os.mkdir("temp")
 except:
     pass
@@ -42,7 +39,12 @@ st.write('Las interfaces de texto a audio son fundamentales en las interfaces mu
          ' visuales y permitiendo la interacción en situaciones donde no es posible leer texto. Estas interfaces '  
          ' también impulsan tecnologías emergentes como los asistentes de voz inteligentes, haciendo que la tecnología ' 
          ' sea más accesible e intuitiva para todos los usuarios')
-tld="es"
+           
+
+    text = pytesseract.image_to_string(img_rgb)
+
+    tld="es"
+    st.write(text) 
 
 def text_to_speech(text, tld):
     
