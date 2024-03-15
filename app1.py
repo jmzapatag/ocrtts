@@ -31,7 +31,7 @@ if img_file_buffer is not None:
     img_rgb = cv2.cvtColor(cv2_img, cv2.COLOR_BGR2RGB)
     text=pytesseract.image_to_string(img_rgb)
     st.write(text) 
-      try:
+try:
     os.mkdir("temp")
 except:
     pass
